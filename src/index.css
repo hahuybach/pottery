@@ -1,0 +1,44 @@
+:root {
+  --primary-green: #577b6d;
+  --primary-beige: #f0ede8;
+  --secondary: #d5d7d1;
+  --semibold: 600;
+  --medium: 500;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3,
+.fs-16 {
+  font-size: 16px;
+  font-weight: var(--semibold);
+}
+h4,
+.fs-14 {
+  font-size: 14px;
+  font-weight: var(--semibold);
+}
+.label-1 {
+  font-size: 24px;
+  font-weight: var(--semibold);
+}
+.label-2 {
+  font-size: 16px;
+  font-weight: var(--semibold);
+}
+.label-3 {
+  font-size: 12px;
+  font-weight: var(--semibold);
+}
+.label-4 {
+  font-size: 12px;
+  font-weight: var(--medium);
+}
+.border-black {
+  border: 0.5px solid #3d3b37;
+}

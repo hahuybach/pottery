@@ -1,0 +1,26 @@
+.header-shadow {
+  box-shadow: 0px 2px 10px 0px #00000040;
+}
+.fs48 {
+  font-size: 48px;
+  color: var(--primary-green);
+}
+.searchInput {
+  width: 263px;
+  height: 29px;
+  padding: 12px 9px 12px 9px;
+  gap: 11px;
+  border: 0.5px 0px 0px 0px;
+  opacity: 0px;
+  color: #898787;
+  background-color: var(--primary-beige);
+}
+.headerItem {
+  i {
+    font-size: 24px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: var(--semibold);
+  }
+}

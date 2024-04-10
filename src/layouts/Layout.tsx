@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import layoutStyle from "./layout.module.css";
 import { Outlet } from "react-router-dom";
@@ -10,6 +11,9 @@ export default function Layout() {
         </div>
         <div className="">
           <Outlet />
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </>

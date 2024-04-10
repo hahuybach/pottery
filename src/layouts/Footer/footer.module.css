@@ -1,0 +1,13 @@
+.footerContainer {
+  background-color: var(--secondary);
+  
+  padding: 20px;
+  div {
+    background-color: var(--primary-beige);
+    width: 310px;
+    height: 310px;
+    i {
+      font-size: 50px;
+    }
+  }
+}

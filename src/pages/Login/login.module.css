@@ -1,0 +1,43 @@
+.fs48 {
+  font-size: 48px;
+  color: var(--primary-green);
+}
+.login {
+  background-color: var(--primary-beige);
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
+.header {
+  /* position: absolute; */
+}
+.loginForm {
+  height: 100vh;
+  background-color: var(--primary-beige);
+}
+.form {
+  height: 663px;
+  width: 1426px;
+}
+.inputLoginForm {
+  width: 360px;
+  height: 44px;
+}
+.remember {
+  span {
+    font-size: 14px;
+    &:hover {
+      color: var(--primary-green);
+      transition: var(--smooth);
+    }
+  }
+}
+.btnSocial {
+  border: 0.5px solid #000 !important;
+  border-radius: 0;
+  margin: 0 10px;
+}
+.logoImg {
+  height: 30px;
+  width: 30px;
+}

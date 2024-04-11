@@ -11,7 +11,7 @@ export default function Header() {
   ];
   return (
     <>
-      <div className="container">
+      <div className="margin">
         <div className="d-flex justify-content-between align-items-center pt-2">
           <div className="headerName">
             <h1 className={headerStyle.fs48}>Tiệm gốm nhà lá</h1>

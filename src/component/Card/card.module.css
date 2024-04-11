@@ -1,0 +1,10 @@
+.cardImg {
+  img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+  }
+}
+.price {
+  /* color: #000; */
+}

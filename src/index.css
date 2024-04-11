@@ -11,24 +11,31 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-h1 {
+h1,
+.h1 {
   font-size: 36px;
   font-weight: 700;
+  color: var(--primary-font-color);
 }
-h2 {
+h2,
+.h2 {
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-font-color);
 }
 h3,
+.h3,
 .fs-16 {
   font-size: 16px;
   font-weight: var(--semibold);
+  color: var(--primary-font-color);
 }
 h4,
-.fs-14 {
+.fs-14,
+.h4 {
   font-size: 14px;
   font-weight: var(--semibold);
+  color: var(--primary-font-color);
 }
 .label-1 {
   font-size: 24px;
@@ -89,6 +96,13 @@ h4,
   font-size: 14px;
   width: 360px;
 }
+.input {
+  padding: 10px;
+  border: 0.5px solid #3d3b37b2;
+  background-color: transparent;
+  color: #3d3b374d;
+  font-size: 14px;
+}
 .checkbox-green {
   /* outline: 1px solid var(--primary-green); */
   /* border: none; */
@@ -96,4 +110,10 @@ h4,
 }
 .margin {
   margin: 0 248px;
+}
+.green-color {
+  color: var(--primary-green);
+}
+.underline {
+  text-decoration: underline;
 }

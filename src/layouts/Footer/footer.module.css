@@ -1,6 +1,6 @@
 .footerContainer {
   background-color: var(--secondary);
-  
+
   padding: 20px;
   div {
     background-color: var(--primary-beige);
@@ -10,4 +10,48 @@
       font-size: 50px;
     }
   }
+}
+.payment {
+  img {
+    width: 50px;
+    height: 100%;
+    margin-right: 20px;
+  }
+}
+.sentToEmail {
+  width: 300px;
+}
+.btnSent {
+  height: 43px;
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border: none;
+  i {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.circleImg {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.socialMedia {
+  color: var(--primary-green) !important;
+  h2 {
+    color: var(--primary-green) !important;
+  }
+  i {
+    font-size: 53px;
+    margin: 0 20px;
+  }
+}
+
+.width30 {
+  width: 30%;
+}
+.width40 {
+  width: 40%;
 }

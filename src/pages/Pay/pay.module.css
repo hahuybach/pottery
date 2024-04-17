@@ -1,0 +1,26 @@
+.shipping {
+  width: 100%;
+  input {
+    width: 100%;
+    background-color: var(--primary-beige);
+    border: 1px solid black;
+    color: calc(0.7 * var(--primary-font-color));
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+.paySelect {
+  width: 100%;
+  background-color: var(--primary-beige);
+  border: 1px solid black;
+  color: calc(0.7 * var(--primary-font-color));
+  font-size: 16px;
+  padding: 10px;
+  height: 46px;
+}
+.paymentItem {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-right: 10px;
+}

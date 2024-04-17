@@ -61,6 +61,9 @@ h4,
 .fw-500 {
   font-weight: 500;
 }
+.fw-600 {
+  font-weight: 600;
+}
 .fw-700 {
   font-weight: 700;
 }
@@ -189,4 +192,7 @@ h4,
 }
 .yellow {
   background-color: yellow;
+}
+.ant-select-selection-item {
+  color: calc(0.7 * var(--primary-font-color));
 }

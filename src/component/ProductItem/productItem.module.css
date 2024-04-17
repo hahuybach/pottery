@@ -1,0 +1,29 @@
+.cartCheckbox {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-beige);
+}
+.cardItemImg {
+  img {
+    width: 125px;
+    height: 125px;
+  }
+}
+.itemInfo {
+  width: 800px;
+}
+.trash {
+  width: 200px;
+  i {
+    font-size: 36px;
+  }
+}
+.filterSelect {
+  width: 150px;
+  border: 1px solid black;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

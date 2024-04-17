@@ -4,7 +4,7 @@ import homeStyle from "./home.module.css";
 export default function Home() {
   return (
     <>
-      <div className="row margin">
+      <div className="row">
         <div className="col-md-5 px-5 d-flex align-items-center">
           <div>
             <h1 className="mb-4">LỌ HOA</h1>

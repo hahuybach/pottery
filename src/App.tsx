@@ -6,6 +6,9 @@ import ResetPassword from "./pages/ResetPassword/ResetPassword";
 import PrivateRoute from "./routes/PrivateRoutes";
 import Glassware from "./pages/Glassware/Glassware";
 import Home from "./pages/Home/Home";
+import Vase from "./pages/Vase/Vase";
+import VaseDetail from "./pages/Vase/VaseDetail";
+import Cart from "./layouts/Cart/Cart";
 function App() {
   return (
     <>
@@ -17,6 +20,9 @@ function App() {
             <Route path="/" element={<PrivateRoute />}>
               <Route path="" element={<Home />} />
               <Route path="/glassware" element={<Glassware />} />
+              <Route path="/vase" element={<Vase />} />
+              <Route path="/vase/:id" element={<VaseDetail />} />
+              <Route path="/cart" element={<Cart />} />
             </Route>
           </Routes>
         </AuthProvider>

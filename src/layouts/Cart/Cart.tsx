@@ -41,7 +41,7 @@ export default function Cart() {
   );
 
   return (
-    <div className="cart-page ">
+    <div className="cart-page mt-5">
       <h2 className="text-center">GIỎ HÀNG CỦA BẠN</h2>
       <p className="h3 text-center">Số sản phẩm: {totalItems}</p>
       {cartItems.map((item) => (

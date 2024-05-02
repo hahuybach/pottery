@@ -23,4 +23,32 @@
   border-radius: 6px;
   padding: 12px 16px;
   margin-right: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-green-hover);
+    border: 1px solid var(--primary-green-hover);
+    transition: var(--smooth);
+    color: #fff;
+  }
+}
+.activePaymentItem {
+  background-color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  color: #fff;
+  &:hover {
+    background-color: var(--primary-green-hover);
+    border: 1px solid var(--primary-green-hover);
+    transition: var(--smooth);
+  }
+}
+.policy {
+  max-height: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.listProduct {
+  background-color: #d5d7d1;
+}
+.payment {
+  background-color: var(--secondary);
 }

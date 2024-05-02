@@ -1,4 +1,9 @@
-export default function InputNumber({ value, onDecrease, onIncrease,onUpdateQuantity }) {
+export default function InputNumber({
+  value,
+  onDecrease,
+  onIncrease,
+  onUpdateQuantity,
+}) {
   const handleDecrease = () => {
     onDecrease();
   };
@@ -10,7 +15,7 @@ export default function InputNumber({ value, onDecrease, onIncrease,onUpdateQuan
   const handleChange = (e) => {
     const newValue = parseInt(e.target.value);
     if (!isNaN(newValue)) {
-      onUpdateQuantity(newValue)
+      onUpdateQuantity(newValue);
     }
   };
 

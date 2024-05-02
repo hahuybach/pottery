@@ -5,7 +5,11 @@ import { Menu, MenuProps, Select } from "antd";
 import style from "./listProductsLayout.module.css";
 interface Product {}
 export default function ListProductLayout() {
-  const products: Product[] = [];
+  const products: Product[] = [
+    {
+      imgUrl: vaseImage,
+    },
+  ];
   const getProducts = (): JSX.Element[] => {
     const items = [];
     for (let index = 0; index < 15; index++) {
@@ -13,10 +17,10 @@ export default function ListProductLayout() {
         <div key={index} className="col-md-4 mb-5">
           <Card
             imgUrl={vaseImage}
-            title={"Lorem ipsum"}
-            reviewRating={4}
-            reviewNum={20}
-            price={"350.000"}
+            productName={"Lorem ipsum"}
+            rating={4}
+            ratingNum={20}
+            price={"350000"}
             soldItem={90}
           />
         </div>
@@ -26,7 +30,7 @@ export default function ListProductLayout() {
   };
   return (
     <>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-md-3">
           <FilterMenu />
         </div>

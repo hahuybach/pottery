@@ -9,7 +9,7 @@ export default function Layout() {
         <div className={layoutStyle.header}>
           <Header />
         </div>
-        <div className="mt-5 margin">
+        <div className="margin">
           <Outlet />
         </div>
         <div className="footer">

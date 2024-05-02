@@ -1,0 +1,8 @@
+.voucherInput {
+  background-color: var(--secondary);
+  border: 1px solid black;
+  width: 294px;
+  height: 44px;
+  border-radius: 5px;
+  padding: 0 15px;
+}

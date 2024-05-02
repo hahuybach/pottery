@@ -1,5 +1,20 @@
+import { Dropdown, MenuProps, Space } from "antd";
 import headerStyle from "./header.module.css";
+import { useEffect, useState } from "react";  
+import { getUserData } from "../../service/UserDataService";
 export default function Header() {
+  const [userData, setUserData] = useState(null);
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const result = await getUserData();
+        console.log(result);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchUserData();
+  }, []);
   const nav = [
     "LỌ HOA",
     "BỘ ẤM TRÀ",
@@ -8,6 +23,22 @@ export default function Header() {
     "ĐỒ THỜ",
     "ĐỒ THỦY TINH",
     "DESIGN TREND",
+  ];
+  const items: MenuProps["items"] = [
+    {
+      label: "Tài khoản",
+      key: "0",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: "Đăng xuất",
+      key: "1",
+    },
+    {
+      type: "divider",
+    },
   ];
   return (
     <>
@@ -34,7 +65,13 @@ export default function Header() {
             </div>
             <div className={`useraccount mx-1 ${headerStyle.headerItem}`}>
               <i className="bi bi-person"></i>
-              <label className="ms-1">Tài khoản</label>
+              <Dropdown menu={{ items }} trigger={["click"]}>
+                <a onClick={(e) => e.preventDefault()}>
+                  <label className="ms-1">
+                    {userData ? userData : "Tài khoản"}
+                  </label>
+                </a>
+              </Dropdown>
             </div>
           </div>
         </div>

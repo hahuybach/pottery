@@ -137,8 +137,7 @@ h4,
   font-size: 14px;
 }
 .checkbox-green {
-  /* outline: 1px solid var(--primary-green); */
-  /* border: none; */
+  border: 1px solid var(--primary-green);
   background-color: var(--primary-beige);
 }
 .margin {

@@ -3,7 +3,9 @@ import fbLogo from "./../../assets/logo/fb_logo.jpg";
 import ggLogo from "./../../assets/logo/gg_logo.jpg";
 import { useState } from "react";
 import { useAuth } from "../../provider/AuthProvider";
+import { redirect, useNavigate } from "react-router-dom";
 export default function Login() {
+  const navigate = useNavigate();
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -24,6 +26,14 @@ export default function Login() {
       [name]: value,
     }));
     console.log(input);
+  };
+  const handleLoginFacebook = () => {
+    window.location.href =
+      "http://localhost:8080/oauth2/authorization/facebook";
+    console.log("fb");
+  };
+  const handleLoginGoogle = () => {
+    window.location.href = "http://localhost:8080/oauth2/authorization/google";
   };
   return (
     <div className={loginStyle.login}>
@@ -99,11 +109,19 @@ export default function Login() {
           </div>
           <hr />
           <div className="d-flex justify-content-center align-items-center">
-            <button className={` btn ${loginStyle.btnSocial}  `}>
+            <button
+              type="button"
+              className={` btn ${loginStyle.btnSocial}  `}
+              onClick={handleLoginFacebook}
+            >
               <img className={loginStyle.logoImg} src={fbLogo} alt="" />
               &nbsp;ĐĂNG NHẬP VỚI FACEBOOK
             </button>
-            <button className={` btn ${loginStyle.btnSocial}  `}>
+            <button
+              type="button"
+              className={` btn ${loginStyle.btnSocial}  `}
+              onClick={handleLoginGoogle}
+            >
               <img className={loginStyle.logoImg} src={ggLogo} alt="" />
               &nbsp;ĐĂNG NHẬP VỚI GOOGLE
             </button>

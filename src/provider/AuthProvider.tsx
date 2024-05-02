@@ -14,9 +14,13 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [user, setUser] = useState<User | null>(null);
-  const [token, setToken] = useState<string>(localStorage.getItem("site") || "");
+  const [token, setToken] = useState<string>(
+    localStorage.getItem("site") || ""
+  );
   const navigate = useNavigate();
 
   const loginAction = (data: User) => {

@@ -4,12 +4,7 @@ import vaseImage from "../../assets/home/vase.jpg";
 import { Menu, MenuProps, Select } from "antd";
 import style from "./listProductsLayout.module.css";
 interface Product {}
-export default function ListProductLayout() {
-  const products: Product[] = [
-    {
-      imgUrl: vaseImage,
-    },
-  ];
+export default function ListProductLayout({products}) {
   const getProducts = (): JSX.Element[] => {
     const items = [];
     for (let index = 0; index < 15; index++) {

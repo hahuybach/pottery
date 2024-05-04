@@ -1,6 +1,6 @@
 import ListProductLayout from '../../layouts/Main/ListProductsLayout';
 
-export default function Vase() {
+export default function Ornaments() {
     return (
         <>
             <ListProductLayout products={[]} />
